@@ -8,5 +8,6 @@ resources:
 - helm_release.yaml
 configMapGenerator:
 - name: counter-values
+  namespace: gitops-ondrejsika
   files:
   - values.yaml
