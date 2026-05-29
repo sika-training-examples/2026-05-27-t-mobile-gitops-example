@@ -21,3 +21,6 @@ api:
       enabled: true
       selfSignedCert: false
       secretName: kargo-api-tls
+controller:
+  rollouts:
+    integrationEnabled: false
