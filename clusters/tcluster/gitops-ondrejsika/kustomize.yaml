@@ -5,3 +5,4 @@ metadata:
 resources:
 - namespace.yaml
 - repo.yaml
+- helm_release.yaml

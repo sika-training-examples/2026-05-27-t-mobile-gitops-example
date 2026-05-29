@@ -1,0 +1,20 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: counter
+  namespace: gitops-ondrejsika
+spec:
+  releaseName: counter
+  chart:
+    spec:
+      chart: ./kubernetes/chart
+      sourceRef:
+        kind: GitRepository
+        name: counter
+        namespace: counter
+      version: "*"
+  interval: 1m
+  values:
+    host: gitops-ondrejsika.wo0.sikademo.com
+    backendImage: ttl.sh/ondrejsika/counter/backend
+    frontendImage: ttl.sh/ondrejsika/counter/frontend
