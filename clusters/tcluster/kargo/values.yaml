@@ -4,7 +4,7 @@ crds:
   install: true
   keep: true
 api:
-  host: kargo.w0.sikademo.com
+  host: kargo.wo0.sikademo.com
   tls:
     enabled: false
     terminatedUpstream: true
