@@ -6,3 +6,7 @@ resources:
 - namespace.yaml
 - repo.yaml
 - helm_release.yaml
+configMapGenerator:
+- name: counter-values
+  files:
+  - values.yaml

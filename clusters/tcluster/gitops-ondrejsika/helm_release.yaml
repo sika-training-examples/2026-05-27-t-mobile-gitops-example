@@ -14,8 +14,7 @@ spec:
         namespace: gitops-ondrejsika
       version: "*"
   interval: 1m
-  values:
-    host: gitops-ondrejsika.wo0.sikademo.com
-    backendImage: ttl.sh/ondrejsika/counter/backend
-    frontendImage: ttl.sh/ondrejsika/counter/frontend
-    EXTRA_TEXT_SUFFIX: v2
+  valuesFrom:
+    - kind: ConfigMap
+      name: counter-values
+      valuesKey: values.yaml
