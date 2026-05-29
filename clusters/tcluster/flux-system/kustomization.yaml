@@ -4,3 +4,4 @@ resources:
 - repo.yaml
 - flux-system.yaml
 - gitops-ondrejsika.yaml
+- gitops-dela.yaml
