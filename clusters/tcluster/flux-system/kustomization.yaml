@@ -5,3 +5,4 @@ resources:
 - flux-system.yaml
 - gitops-ondrejsika.yaml
 - gitops-dela.yaml
+- kargo.yaml
