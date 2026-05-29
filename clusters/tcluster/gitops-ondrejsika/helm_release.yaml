@@ -18,3 +18,4 @@ spec:
     host: gitops-ondrejsika.wo0.sikademo.com
     backendImage: ttl.sh/ondrejsika/counter/backend
     frontendImage: ttl.sh/ondrejsika/counter/frontend
+    EXTRA_TEXT_SUFFIX: v2
