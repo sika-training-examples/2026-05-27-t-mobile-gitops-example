@@ -9,3 +9,5 @@ configMapGenerator:
   namespace: gitops-ondrejsika
   files:
   - values.yaml
+  options:
+    disableNameSuffixHash: true
