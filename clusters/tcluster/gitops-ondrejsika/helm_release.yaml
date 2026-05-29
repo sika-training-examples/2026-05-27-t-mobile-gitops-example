@@ -11,7 +11,7 @@ spec:
       sourceRef:
         kind: GitRepository
         name: counter
-        namespace: counter
+        namespace: gitops-ondrejsika
       version: "*"
   interval: 1m
   values:
